@@ -17,7 +17,13 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['https://pizza-ville-5gsynkque-ahmeds-projects-30cd8f09.vercel.app', 'http://localhost:5173'],
+     origin: [
+  'https://pizza-ville.vercel.app',
+  'https://pizza-ville-5gsynkque-ahmeds-projects-30cd8f09.vercel.app',
+  'http://pizza-ville.vercel.app',
+  'http://localhost:5173',
+  '*'
+],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS', 'HEAD'],
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
     },
